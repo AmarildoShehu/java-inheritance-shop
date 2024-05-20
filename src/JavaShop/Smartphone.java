@@ -25,7 +25,7 @@ public class Smartphone extends Prodotto{
         }
 
         //metodo calcolo sconto Smart
-        public double discount() {
+        public double smartphoneDiscount() {
             if (memoryLocated < 32) {
                 return;getPrice() * 0.05;
             } else {
