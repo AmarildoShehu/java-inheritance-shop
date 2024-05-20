@@ -4,16 +4,16 @@ import java.util.Random;
 public class Prodotto {
 
     //Atributi privati della classe
-    private int code;
+    private final int code;
     private String name;
     private String description;
     private double price;
     private double iva;
 
     //costruttore nuovo progetto
-    public Prodotto(String name, String description, double price, double iva) {
+    public Prodotto(int code, String name, String description, double price, double iva) {
         //nuovo codice random per il prodotto
-        this.code = generateRandomCode();
+        this.code = code;
         this.name = name;
         this.description = description;
         this.price = price;
